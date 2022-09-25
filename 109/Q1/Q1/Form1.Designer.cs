@@ -70,9 +70,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(175, 75);
             this.label4.Name = "label4";
-            this.label4.Text = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 19);
+            this.label4.Size = new System.Drawing.Size(51, 19);
             this.label4.TabIndex = 3;
+            this.label4.Text = "label4";
             // 
             // label5
             // 
@@ -88,6 +88,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 27);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 

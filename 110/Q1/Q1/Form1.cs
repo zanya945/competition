@@ -8,7 +8,7 @@ namespace Q1
             Bitmap bitmap = new Bitmap(500, 500);
             Graphics g = Graphics.FromImage(bitmap);
             for (int i = 0; i < 10; i++) {
-                g.DrawLine(Pens.Black,25, i*50+25, 475, i*50+25);
+                g.DrawLine(Pens.Black, 25, i*50+25, 475, i*50+25);
                 g.DrawLine(Pens.Black, i*50+25, 25, i*50+25,  475);
             }
             pictureBox1.Image = bitmap;

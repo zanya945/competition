@@ -17,12 +17,14 @@ namespace Q1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (save <= 35)
+            if (save < 35)
             {
+                isfirst = true;
                 label6.Text = "餘額不足";
             }
             else if (isfirst && save >= 35)
             {
+                label6.Text = "";
                 save -= 35;
                 label6.Text = "送出可樂";
                 isfirst = false;
@@ -37,12 +39,14 @@ namespace Q1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (save <= 30)
+            if (save < 30)
             {
+                isfirst = true;
                 label6.Text = "餘額不足";
             }
             else if (isfirst && save >= 30)
             {
+                label6.Text = "";
                 save -= 30;
                 label6.Text = "送出pepso";
                 isfirst = false;
@@ -57,12 +61,14 @@ namespace Q1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (save <= 25)
+            if (save < 25)
             {
+                isfirst = true;
                 label6.Text = "餘額不足";
             }
             else if (isfirst && save >= 25)
             {
+                label6.Text = "";
                 save -= 25;
                 label6.Text = "送出Diet pepso";
                 isfirst = false;
@@ -77,12 +83,14 @@ namespace Q1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (save <= 30)
+            if (save < 30)
             {
+                isfirst = true;
                 label6.Text = "餘額不足";
             }
             else if (isfirst && save >= 30)
             {
+                label6.Text = "";
                 save -= 30;
                 label6.Text = "送出Diet Cola";
                 isfirst = false;
